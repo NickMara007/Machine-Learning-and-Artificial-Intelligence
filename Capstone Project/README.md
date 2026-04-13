@@ -74,6 +74,11 @@ For example, if results were promising for a given function, I may have switched
 
 This folder contains the data sets for each function, that were updated on a weekly basis to include the latest input and output data points.
 
+***Capstone Week X.ipynb***
+
+These are the notebooks that I used each week to run models and generate the next submission. 
+Additional features were integrated and improvements were made on a rolling basis, so later scrips will be more polished and refined.  These include additional performance metrics, visualisation improvements, and increases in interpretability. This shows the natural development of my solutions and the week-by-week iteration that took place.
+
 ***00 Capstone Data Set Updater.ipynb***
 
 The purpose of this script is to update the data sets for each function on a weekly basis, incorporating the new input values that I had submitted and their corresponding output value.
@@ -87,17 +92,12 @@ This script imports the previous week’s .npy file data as numpy arrays; append
 This is a neutral template of the Jupyter notebook I would be using each week to update my model. 
 It is based on the early iterations of the notebooks so may lack features that later scripts include.
 
-***02 Capstone Variable and Submission Tracker.xlsx***
+***docs/Capstone Variable and Submission Tracker.xlsx***
 
 An Excel file containing 3 spreadsheets:
 1) Plans out the approach and model parameters for each week for every function, and compares it to the actual parameters that were used.
 2) Tracks and stores weekly submissions for every function.
 3) Logs key changes made to models each week.
-
-***Capstone Week X.ipynb***
-
-These are the notebooks that I used each week to run models and generate the next submission. 
-Additional features were integrated and improvements were made on a rolling basis, so later scrips will be more polished and refined.  These include additional performance metrics, visualisation improvements, and increases in interpretability. This shows the natural development of my solutions and the week-by-week iteration that took place.
 
 ***docs/Functions.md***
 
