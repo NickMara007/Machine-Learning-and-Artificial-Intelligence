@@ -19,6 +19,7 @@ values were approximated to 0.
 
 - Huge improvements in performance metrics and visualisations:
 -   Added improvement per iteration as a new plotted metric.
--   Visually improved graphs.
+-   Visually improved graphs with better axis labelling and colouring.
 -   Added best observed y value and next recommended query point to scatter plots,
--   so it is easy to visualise how close the next query point is to the current, known maximum.
+  so it is easy to visualise how close the next query point is to the current, known maximum.
+Also added a legend to the plots to increase interpretability.
