@@ -12,8 +12,8 @@ Any additional features added, improvements made, or key alterations each week w
 
 - Added scaling to output data (y values).
 This helped with boundary issues (models recommending new query points that were on the boundary of the sample space - this is not ideal).
-Since the output values are so small in function 1, ranging from $10^{-121}$ to $10^{-16}$, it did not work well with scaling and all
-values were approximated to 0.
+Since the output values are so small in function 1, ranging from $10^{-121}$ to $10^{-16}$ in magnitude, it did not work well with scaling as all
+values were approximated to 0. Therefore, function 1 was left unscaled.
 
 ## Week 3
 
