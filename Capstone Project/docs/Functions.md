@@ -1,6 +1,6 @@
 # Capstone Project Functions
 
-This document conveys key information about each function that was provided at the beginning of the project.
+This document displays information about each function that was provided at the beginning of the project.
 
 The dimensionality of a function refers to the number of input features.
 
