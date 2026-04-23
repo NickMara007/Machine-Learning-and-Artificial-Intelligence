@@ -9,7 +9,8 @@ The objective of the project is to maximise these eight black-box functions, thr
 Every week, we were required to submit one new set of inputs per function, and would receive the corresponding output values before the following week. Through a total of 13 submissions, over 13 weeks, the aim was to find an output value for each function that is as close to its global maximum as possible.
 
 We were provided with a limited amount of initial data, from which we had to build our own models to approximate each function and strategically select a next data point to query each week. Bayesian Optimisation seemed the most fitting technique, and is the machine learning approach I opted for.
-Note: this project is currently under completion, and is running from X date to X date.
+
+Note: this project is currently under completion, and is running from March 2026 date to June 2026.
 
 ## Features
 
