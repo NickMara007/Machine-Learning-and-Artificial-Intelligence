@@ -18,8 +18,9 @@ values were approximated to 0. Therefore, function 1 was left unscaled.
 ## Week 3
 
 - Huge improvements in performance metrics and visualisations:
--   Added improvement per iteration as a new plotted metric.
--   Visually improved graphs with better axis labelling and colouring.
--   Added best observed y value and next recommended query point to scatter plots,
+  -   Added improvement per iteration as a new plotted metric.
+  -   Visually improved graphs with better axis labelling and colouring.
+  -   Reformatted performance metric plots from a 1x3 to a 2x2 arrangement.
+  -   Added best observed y value and next recommended query point to scatter plots,
   so it is easy to visualise how close the next query point is to the current, known maximum.
-Also added a legend to the plots to increase interpretability.
+  -  Added a legend to scatter plots for increased interpretability.
