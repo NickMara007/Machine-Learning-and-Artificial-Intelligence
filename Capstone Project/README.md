@@ -114,7 +114,7 @@ The problem with such an approach comes when testing the system is expensive, ei
 Additionally, for many real-world models there are a near infinite number of potential hyperparameter permutations, and even if this is constrained, the number can still be extremely large. 
 For both these reasons, a different, more efficient approach has to be taken.
 
-Take, for example, another one of my machine learning projects that utilises decision trees to generate market predictions, which an options straddle strategy uses as trade signals (see other repository). 
+Take, for example, another one of my machine learning projects that utilises decision trees to generate market predictions, which an options straddle strategy uses as trade signals (please see my other repository). 
 To get the best trading performance there are many hyperparameters that could be tuned. Say we wanted to select ten of these, and for each one test five different values. 
 This would result in $5^{10} ≈ 9.77$ million different permutations. 
 
