@@ -38,8 +38,8 @@ An acquisition function is then used to determine the next sampling point.
 ### 2) Acquisition Functions
 
 The acquisition functions used in this project were:
-- Upper Confidence Bound (UCB): Trades off mean and uncertainty using a confidence parameter κ (kappa)
-- Expected Improvement (EI): Balances exploration and exploitation by estimating expected gain
+- Upper Confidence Bound (UCB): Trades off mean and uncertainty using a confidence parameter κ (kappa).
+- Expected Improvement (EI): Balances exploration and exploitation by estimating expected gain.
 
 ### 3) Optimisation Pipeline
 
@@ -57,13 +57,13 @@ My strategy was roughly to emphasise exploration over exploitation at the start 
 
 
 In terms of model parameters:
-- Use a Gaussian Process as the surrogate function for every objective function.
-- Use a Radial Basis Function (RBF) kernel for smooth or unimodal functions.
-- Use a Matern kernel, with nu = 2.5, for functions with many local optima.
-- Start with UCB as the acquisition function.
-- Begin with a high kappa, so exploration is favoured.
-- Slowly decay kappa on a weekly basis until weeks 8/9.
-- Use Expected Improvement (EI) as the acquisition function from then on, favouring exploitation.
+- Used a Gaussian Process as the surrogate function for every objective function.
+- Used a Radial Basis Function (RBF) kernel for smooth or unimodal functions.
+- Used a Matern kernel, with nu = 2.5, for functions with many local optima.
+- Started with UCB as the acquisition function.
+- Began with a high kappa, so exploration is favoured.
+- Slowly decayed kappa on a weekly basis until weeks 8/9.
+- Used Expected Improvement (EI) as the acquisition function from then on, favouring exploitation.
 
 Hyperparameters were tailored to each objective function to model them most accurately. 
 My approach was open to adaptation as new information was gathered each week. 
@@ -116,7 +116,7 @@ For both these reasons, a different, more efficient approach has to be taken.
 
 Take, for example, another one of my machine learning projects that utilises decision trees to generate market predictions, which an options straddle strategy uses as trade signals (see other repository). 
 To get the best trading performance there are many hyperparameters that could be tuned. Say we wanted to select ten of these, and for each one test five different values. 
-This would result in 5^10≈9.77 million different permutations. 
+This would result in $5^{10} ≈ 9.77$ million different permutations. 
 
-Only with a vast amount of parallel computing power and enough time would it be possible to test these many permutations, but in any normal sense this is not a practical approach. 
+Only with a vast amount of parallel computing power and enough time would it be possible to test these many permutations, but in any realistic sense this is not a practical approach. 
 Bayesian Optimisation could reduce the number of combinations of hyperparameters to hundreds or a few thousand, significantly reducing costs.
