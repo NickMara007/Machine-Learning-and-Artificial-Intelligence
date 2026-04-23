@@ -16,13 +16,14 @@ Note: this project is currently under completion, and is running from March 2026
 
 - Implementation of Bayesian Optimisation using Gaussian Processes 
 - Support for multiple acquisition functions:
-- Upper Confidence Bound (UCB)
-- Expected Improvement (EI)
-- Probability of Improvement (PI)
+  - Upper Confidence Bound (UCB)
+  - Expected Improvement (EI)
+  - Probability of Improvement (PI)
 - Evaluation on eight benchmark functions
 - Visualisation of optimisation process
 - Visualisation of key metrics to track model performance over time
 - Model iteration and development over time
+- Integration of deep learning (neural networks) to aid the optimisation process
 
 ## Methodology
 
