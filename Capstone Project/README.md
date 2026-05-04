@@ -77,7 +77,7 @@ For example, if results were promising for a given function, I may have switched
 
 ***Data Sets***
 
-This folder contains the data sets for each function, that were updated on a weekly basis to include the latest input and output data points.
+This folder contains the data sets for each function, that were updated on a weekly basis to include the latest input and output data points for each of the objective functions.
 
 ***Capstone Week X.ipynb***
 
