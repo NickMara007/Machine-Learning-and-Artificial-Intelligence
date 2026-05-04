@@ -45,22 +45,27 @@ The acquisition functions used in this project were:
 - Upper Confidence Bound (UCB): Trades off mean and uncertainty using a confidence parameter κ (kappa).
 - Expected Improvement (EI): Balances exploration and exploitation by estimating expected gain.
 
-### 3) Optimisation Pipeline
+### 3) Deep Learning
+
+From week 5 onwards, I decided to implement neural networks as an auxiliary function that predicts the probability of candidate points being in a high-performing region, and factors this into the acquisition function calculation.
+
+### 4) Optimisation Pipeline
 
 - Initialise with random samples 
-- Fit Gaussian Process to observed data 
+- Fit Gaussian Process to observed data
+- Train a neural network on the search space (week 5 onwards)
 - Maximise acquisition function 
 - Sample new point 
 - Update model 
 - Repeat until convergence or budget reached
 
-### 4) Overall strategy
+### 5) Overall strategy
 
 With only a limited number of queries, 13 in total, it was important that I had an execution plan so that each submission provided as much value as possible.
 My strategy was roughly to emphasise exploration over exploitation at the start of the project, allowing the models to gain an understanding of the overall topology of each of the response surfaces. The middle and later stages would take a much more exploitative approach, concentrating queries on high-performing regions to maximise the output.
 
 
-In terms of model parameters:
+In terms of model hyperparameters:
 - Used a Gaussian Process as the surrogate function for every objective function.
 - Used a Radial Basis Function (RBF) kernel for smooth or unimodal functions.
 - Used a Matern kernel, with nu = 2.5, for functions with many local optima.
@@ -108,6 +113,10 @@ An Excel file containing 3 spreadsheets:
 ***docs/Functions.md***
 
 Provides key information about each of the objective functions used in the project.
+
+***docs/Change Log.md***
+
+Gives a week-by-week summary of the major changes made to weekly notebooks, so that iterative development is easy to follow.
 
 ## Real-world Application
 
