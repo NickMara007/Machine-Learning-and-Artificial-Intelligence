@@ -14,7 +14,7 @@ Every week, we were required to submit one new set of inputs per function, and w
 
 We were provided with a limited amount of initial data, from which we had to build our own models to approximate each function and strategically select a next data point to query each week. Bayesian Optimisation seemed the most fitting technique, and is the machine learning approach I opted for.
 
-Note: this project is currently under completion, and is running from March 2026 date to June 2026.
+Note: this project is currently under completion, and is running from March 2026 date to June 2026, so will be updated as progress is made.
 
 ## Features
 
