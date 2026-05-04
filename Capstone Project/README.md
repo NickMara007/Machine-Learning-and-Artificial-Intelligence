@@ -1,10 +1,11 @@
 # Capstone Project – Black Box Optimisation Challenge
 
 ## Project Overview
-This project forms a key segment of the Professional Certificate programme, and serves an opportunity to demonstrate the machine learning techniques learned on the course within the scope of a 
+
+This project forms an essential part of the Professional Certificate in Machine Learning and Artificial Intelligence programme with Imperial College London, and serves an opportunity to demonstrate the machine learning techniques learned on the course within the scope of a 
 formally structured project.
 
-The project focuses on utilising Bayesian Optimisation to maximise eight black-box functions of increasing dimensionality, to analyse function behaviour, model performance, and convergence. The project forms an essential part of the Professional Certificate in Machine Learning and Artificial Intelligence programme with Imperial College London.
+The project focuses on utilising Bayesian Optimisation to maximise eight black-box functions of increasing dimensionality, to analyse function behaviour, model performance, and convergence. 
 
 ## Project Objectives and Constraints
 
