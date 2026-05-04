@@ -27,7 +27,7 @@ Note: this project is currently under completion, and is running from March 2026
 - Visualisation of optimisation process
 - Visualisation of key metrics to track model performance over time
 - Model iteration and development over time
-- Integration of deep learning (neural networks) to aid the optimisation process
+- Integration of deep learning models (neural networks) to aid the optimisation process
 
 ## Methodology
 
