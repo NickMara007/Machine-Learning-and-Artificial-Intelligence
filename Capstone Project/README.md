@@ -85,23 +85,18 @@ For example, if results were promising for a given function, I may have switched
 
 This folder contains the data sets for each function, that were updated on a weekly basis to include the latest input and output data points for each of the objective functions.
 
-***Capstone Week X.ipynb***
+***Notebooks/Capstone Week X Notebook.ipynb***
 
-These are the notebooks that I used each week to run models and generate the next submission. 
+These are the notebooks that I used each week to run models and generate the next submission points. 
 Additional features were integrated and improvements were made on a rolling basis, so later scrips will be more polished and refined.  These include additional performance metrics, visualisation improvements, and increases in interpretability. This shows the natural development of my solutions and the week-by-week iteration that took place.
 
-***00 Capstone Data Set Updater.ipynb***
+***Notebooks/00 Capstone Data Set Updater.ipynb***
 
 The purpose of this script is to update the data sets for each function on a weekly basis, incorporating the new input values that I had submitted and their corresponding output value.
 Input and output data was given as separate .npy files for each function.
 
 After every submission, the updated data sets are returned as text files. 
 This script imports the previous week’s .npy file data as numpy arrays; appends the new data to the end of the arrays; then saves back as a new .npy file, ready to use as the following week’s data.
-
-***01 Capstone Project Script Template.ipynb***
-
-This is a neutral template of the Jupyter notebook I would be using each week to update my model. 
-It is based on the early iterations of the notebooks so may lack features that later scripts include.
 
 ***docs/Capstone Variable and Submission Tracker.xlsx***
 
