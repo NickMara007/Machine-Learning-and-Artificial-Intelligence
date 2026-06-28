@@ -53,26 +53,26 @@ From week 5 onwards, I decided to implement neural networks as an auxiliary mode
 
 - Initialise with random samples 
 - Fit Gaussian Process to observed data
-- Train a neural network on the search space (week 5 onwards)
+- Train a neural network on observed data and predict on the search space candidates (week 5 onwards)
 - Maximise acquisition function 
 - Sample new point 
 - Update model 
-- Repeat until convergence or budget reached
+- Repeat until budget reached (maximum queries)
 
 ### 5) Overall strategy
 
 With only a limited number of queries, 13 in total, it was important that I had an execution plan so that each submission provided as much value as possible.
-My strategy was roughly to emphasise exploration over exploitation at the start of the project, allowing the models to gain an understanding of the overall topology of each of the response surfaces. The middle and later stages would take a much more exploitative approach, concentrating queries on high-performing regions to maximise the output.
+My strategy was to emphasise exploration over exploitation at the start of the project, allowing the models to gain an understanding of the overall topology of each of the response surfaces. The middle and later stages would take a much more exploitative approach, concentrating queries on high-performing regions to maximise the output.
 
 
 In terms of model hyperparameters:
 - Used a Gaussian Process as the surrogate function for every objective function.
 - Used a Radial Basis Function (RBF) kernel for smooth or unimodal functions.
-- Used a Matern kernel, with nu = 2.5, for functions with many local optima.
+- Used a Matern kernel, with $\nu$ = 2.5, for functions with many local optima.
 - Started with UCB as the acquisition function.
-- Began with a high kappa, so exploration is favoured.
-- Slowly decayed kappa on a weekly basis until weeks 8/9.
-- Used Expected Improvement (EI) as the acquisition function from then on, favouring exploitation.
+- Began with a high $\kappa$ (kappa), so exploration is favoured.
+- Slowly decayed $\kappa$ on a weekly basis until weeks 8/9.
+- Swicthed to the Expected Improvement (EI) acquisition function from then on, which aims to improve on the current best result whilst balancing exploration and exploitation.
 
 Hyperparameters were tailored to each objective function to model them most accurately. 
 My approach was open to adaptation as new information was gathered each week. 
@@ -81,16 +81,18 @@ For example, if results were promising for a given function, I may have switched
 
 ## Scripts and Documentation
 
-***Data Sets***
+<ins>***Data Sets***</ins>
 
 This folder contains the data sets for each function, that were updated on a weekly basis to include the latest input and output data points for each of the objective functions.
 
-***Notebooks/Capstone Week X Notebook.ipynb***
+<ins>***Notebooks***</ins>
+
+***/Capstone Week X Notebook.ipynb***
 
 These are the notebooks that I used each week to run models and generate the next submission points. 
 Additional features were integrated and improvements were made on a rolling basis, so later scrips will be more polished and refined.  These include additional performance metrics, visualisation improvements, and increases in interpretability. This shows the natural development of my solutions and the week-by-week iteration that took place.
 
-***Notebooks/00 Capstone Data Set Updater.ipynb***
+***/00 Capstone Data Set Updater.ipynb***
 
 The purpose of this script is to update the data sets for each function on a weekly basis, incorporating the new input values that I had submitted and their corresponding output value.
 Input and output data was given as separate .npy files for each function.
@@ -98,20 +100,34 @@ Input and output data was given as separate .npy files for each function.
 After every submission, the updated data sets are returned as text files. 
 This script imports the previous week’s .npy file data as numpy arrays; appends the new data to the end of the arrays; then saves back as a new .npy file, ready to use as the following week’s data.
 
-***docs/Capstone Variable and Submission Tracker.xlsx***
+***<ins>documentation</ins>***
+
+***/Capstone Variable and Submission Tracker.xlsx***
 
 An Excel file containing 3 spreadsheets:
 1) Plans out the approach and model parameters for each week for every function, and compares it to the actual parameters that were used.
 2) Tracks and stores weekly submissions for every function.
 3) Logs key changes made to models each week.
 
-***docs/Functions.md***
+***/Functions.md***
 
 Provides key information about each of the objective functions used in the project.
 
-***docs/Change Log.md***
+***/Change Log.md***
 
 Gives a week-by-week summary of the major changes made to weekly notebooks, so that iterative development is easy to follow.
+
+***/Model Flowchart and Explanation.pdf***
+
+Provides a visual representation of how the model works, integrating both Gaussian Process and neural network models to choose query points. 
+
+***/Data sheet.pdf***
+
+Summarises key information about the data sets used throughout the project.
+
+***/Model card.pdf***
+
+Gives a more detailed, written explanation of the optimisation model.  
 
 ## Real-world Application
 
