@@ -47,7 +47,7 @@ The acquisition functions used in this project were:
 
 ### 3) Deep Learning
 
-From week 5 onwards, I decided to implement neural networks as an auxiliary function that predicts the probability of candidate points being in a high-performing region, and factors this into the acquisition function calculation.
+From week 5 onwards, I decided to implement neural networks as an auxiliary model that predicts the probability of candidate points being in a high-performing region, and factors this into the acquisition function calculation.
 
 ### 4) Optimisation Pipeline
 
