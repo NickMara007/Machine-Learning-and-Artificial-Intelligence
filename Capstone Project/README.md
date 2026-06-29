@@ -144,3 +144,15 @@ This would result in $5^{10} ≈ 9.77$ million different permutations.
 
 Only with a vast amount of parallel computing power and enough time would it be possible to test these many permutations, but in any realistic sense this is not a practical approach. 
 Bayesian Optimisation could reduce the number of combinations of hyperparameters to hundreds or a few thousand, significantly reducing costs.
+
+## Results 
+
+Coming soon...
+
+## Conclusion
+
+Overall, this project was extremely enjoyable, providing a structured way to gain hands-on experience with many machine learning and optimisation principles in Python. It allowed me to put theory into practice, and I learned a huge amount about the practical challenges of implementing machine learning in real systems, and well as massively improving my technical ability to manually implement machine learning techniques in Python.
+
+Optimisation is a hugely important aspect of many modern real-world processes, and I now have the ability to optimise these systems in order to better understand model behaviour and boost performance.
+
+Finally, I want to extend a huge thank you to everyone who helped to run the programme, both the Imperial College faculty members and the Emeritus learning support staff, who have provided the means to be able to complete this project through their incredible teaching.
